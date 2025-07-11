@@ -92,38 +92,8 @@
 
     <!-- 主内容区域 -->
     <main class="flex-grow container mx-auto px-4 py-12">
-        <!-- 登录区域 -->
-        <section id="login-section" class="max-w-md mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-8 transform transition-all duration-500 hover:shadow-xl">
-                <div class="text-center mb-6">
-                    <i class="fa fa-lock text-primary text-4xl mb-3"></i>
-                    <h2 class="text-2xl font-bold text-dark">访问图书馆</h2>
-                    <p class="text-gray-600">请输入密码解锁您的图书库</p>
-                </div>
-                <form id="login-form" class="space-y-4">
-                    <div>
-                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">密码</label>
-                        <div class="relative">
-                            <input type="password" id="password" name="password" placeholder="输入访问密码" 
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all outline-none"
-                                required>
-                            <button type="button" id="toggle-password" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
-                                <i class="fa fa-eye-slash"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center">
-                            <span>登录图书馆</span>
-                            <i class="fa fa-arrow-right ml-2"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
         <!-- 上传区域 -->
-        <section id="upload" class="hidden mb-16">
+        <section id="upload" class="mb-16">
             <div class="bg-white rounded-xl shadow-lg p-8 transform transition-all duration-500 hover:shadow-xl">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="text-2xl font-bold text-dark">上传新图书</h2>
@@ -214,7 +184,7 @@
         </section>
 
         <!-- 图书馆区域 -->
-        <section id="library" class="hidden">
+        <section id="library" class="mb-16">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <h2 class="text-2xl font-bold text-dark mb-4 md:mb-0">我的图书馆</h2>
                 <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -457,7 +427,7 @@
     <script>
         // 应用状态管理
         const appState = {
-            isLoggedIn: false,
+            isLoggedIn: true, // 默认已登录
             currentBook: null,
             currentPage: 1,
             totalPages: 100,
@@ -532,3 +502,1050 @@
                     <ul>
                         <li>发现业务趋势和模式</li>
                         <li>做出基于数据的决策</li>
+                        <li>优化业务流程和提高效率</li>
+                        <li>预测未来趋势和行为</li>
+                    </ul>
+                    
+                    <h3>1.2 数据分析的应用领域</h3>
+                    <p>数据分析广泛应用于各个领域，包括但不限于：</p>
+                    <ul>
+                        <li>金融和投资</li>
+                        <li>医疗保健</li>
+                        <li>市场营销和销售</li>
+                        <li>社交媒体和网络分析</li>
+                        <li>物流和供应链管理</li>
+                        <li>体育和娱乐</li>
+                    </ul>
+                    
+                    <h2>第2章 Python 基础</h2>
+                    <p>Python是一种高级、通用、解释型编程语言，因其简洁易读的语法和丰富的库而成为数据科学领域的首选语言。</p>
+                    
+                    <h3>2.1 Python 环境设置</h3>
+                    <p>在开始使用Python进行数据分析之前，需要设置好开发环境。推荐使用Anaconda发行版，它包含了Python解释器和许多常用的数据科学库。</p>
+                    
+                    <h3>2.2 Python 基本语法</h3>
+                    <p>Python的基本语法非常简洁，易于学习。以下是一些Python基本语法的例子：</p>
+                    <pre><code>
+# 变量赋值
+x = 10
+y = 20
+z = x + y
+
+# 条件语句
+if x > y:
+    print("x 大于 y")
+else:
+    print("x 小于或等于 y")
+
+# 循环语句
+for i in range(5):
+    print(i)
+
+# 函数定义
+def add_numbers(a, b):
+    return a + b
+                    </code></pre>
+                    
+                    <h3>2.3 Python 数据结构</h3>
+                    <p>Python提供了多种内置的数据结构，包括列表、元组、字典和集合。</p>
+                    <pre><code>
+# 列表
+fruits = ['apple', 'banana', 'cherry']
+print(fruits[0])  # 输出: apple
+
+# 字典
+person = {'name': 'John', 'age': 30, 'city': 'New York'}
+print(person['name'])  # 输出: John
+
+# 循环遍历列表
+for fruit in fruits:
+    print(fruit)
+                    </code></pre>
+                `,
+                2: `
+                    <h1>人类简史</h1>
+                    <p class="lead">从动物到上帝的人类演化史</p>
+                    
+                    <h2>第一部分：认知革命</h2>
+                    <p>大约7万年前，人类语言发生了重大变革，产生了新的语言形式，我们称之为"虚构故事"的能力。这种能力让人类能够创造并相信虚构的事物，如宗教、国家、法律和公司等。</p>
+                    
+                    <h3>第一章：人类：一种也没什么特别的动物</h3>
+                    <p>在数百万年的时间里，人类只是非洲大陆上一种普通的灵长类动物。与其他动物相比，人类并没有特别突出的身体特征。我们的奔跑速度不如猎豹，力量不如大猩猩，嗅觉不如猎犬。</p>
+                    
+                    <h3>第二章：知善恶树</h3>
+                    <p>认知革命之后，人类拥有了虚构故事的能力，这让我们能够大规模合作。其他动物也能够合作，但它们的合作规模通常较小，且基于本能。而人类的合作则是基于共同的信仰和价值观。</p>
+                    
+                    <h2>第二部分：农业革命</h2>
+                    <p>大约1万年前，人类从狩猎采集社会转向农业社会，这一转变被称为农业革命。农业革命让人类能够生产更多的食物，从而支持更大规模的人口。</p>
+                    
+                    <h3>第三章：人类的劣根性</h3>
+                    <p>农业革命虽然带来了人口增长和定居生活，但也带来了新的问题。农民的工作比狩猎采集者更加辛苦，而且饮食更加单一。此外，农业社会还出现了社会不平等和战争。</p>
+                    
+                    <h3>第四章：毁天灭地的人类洪水</h3>
+                    <p>随着人类社会的发展，人类对环境的影响也越来越大。农业革命导致了大规模的森林砍伐和土地退化，许多物种因此灭绝。</p>
+                `,
+                3: `
+                    <h1>活着</h1>
+                    <p class="lead">余华经典小说</p>
+                    
+                    <p>我比现在年轻十岁的时候，获得了一个游手好闲的职业，去乡间收集民间歌谣。那一年的整个夏天，我如同一只乱飞的麻雀，游荡在知了和阳光充斥的农村。</p>
+                    
+                    <p>我喜欢喝农民那种带苦味的茶水，他们的茶桶就放在田埂的树下，我毫无顾忌地拿起漆满茶垢的茶碗舀水喝，还把自己的水壶灌满，与田里干活的男人说上几句废话，在姑娘因我而起的窃笑声里扬长而去。</p>
+                    
+                    <p>我曾经和一位守着瓜田的老人聊了整整一个下午，这是我有生以来获得的最悠闲的下午。我向他请教民间歌谣，他对民间歌谣的熟悉程度使我惊叹，同时我也为他的知识面之广而惊讶，在那个下午，他向我介绍了三十六种不同的捕鱼方法，从东南沿海到西北高原。</p>
+                    
+                    <p>后来，我与一位真正优秀的民间歌手结下了友谊。我这位朋友是唱丧歌的，丧歌在北方最初的功能是为了抒发哀悼之情，后来逐渐演变成为一种娱乐。</p>
+                    
+                    <p>我这位朋友身强体壮，在乡下算是中上等的农民。他曾经为几位老人唱过丧歌，在当地被称为"丧歌王"。</p>
+                    
+                    <p>在我们那个地方，人死之后，尸体要在家里停放三天，由亲属守灵。在这三天里，要请人唱丧歌，以慰藉死者的灵魂，同时也为了娱乐前来吊唁的亲友。</p>
+                    
+                    <p>我这位朋友的丧歌唱得非常好，他不仅能唱传统的丧歌，还能即兴创作。他的歌声低沉、悲伤，能够打动在场的每一个人。</p>
+                    
+                    <p>有一次，我跟着他去参加一个葬礼。那是一个寒冷的冬天，尸体停放在一间破旧的屋子里，亲友们围坐在四周，默默地哀悼。我这位朋友坐在屋子的一角，开始唱起了丧歌。</p>
+                    
+                    <p>他的歌声一开始很低沉，像是在诉说着死者的生平。渐渐地，他的歌声越来越高，越来越激昂，像是在控诉着命运的不公。在场的每一个人都被他的歌声所打动，有些人甚至哭了起来。</p>
+                    
+                    <p>我记得他唱了一首关于生命的歌，歌词大意是：生命就像一条河流，时而平静，时而湍急。我们都是这条河流上的过客，无论我们愿意不愿意，都要随着河流向前流淌。</p>
+                    
+                    <p>这首歌唱完之后，在场的每一个人都陷入了沉默。过了一会儿，有人开始鼓掌，掌声越来越热烈，最后变成了一片欢呼声。我这位朋友也露出了微笑，他的微笑里充满了自豪和满足。</p>
+                `,
+                4: `
+                    <h1>时间简史</h1>
+                    <p class="lead">从大爆炸到黑洞的宇宙奥秘</p>
+                    
+                    <h2>第一章 我们的宇宙图象</h2>
+                    <p>大多数人会觉得，把我们的宇宙喻为一个无限的乌龟塔相当荒谬。但是我们凭什么就自认为知道得更好呢？我们对宇宙了解了多少？而我们又是怎样才知道的呢？宇宙从何而来，又将向何处去？宇宙有开端吗？如果有的话，在这开端之前发生了什么？时间的本质是什么？它会有一个终结吗？在物理学上的一些最新突破，使一部分奇妙的新技术得以实现，从而对于回答这些长期以来悬而未决问题中的某些问题有所启发。也许有一天这些答案会像我们认为地球绕着太阳运动那样显而易见——当然也可能像乌龟塔那般荒唐可笑。不管怎样，唯有让时间来判断了。</p>
+                    
+                    <p>早在公元前340年，希腊哲学家亚里士多德在他的《论天》一书中，就已经能够对于地球是一个圆球而不是一块平板这一论点提出两个很好的论据。第一，他认为月食是由于地球运行到太阳与月亮之间而造成的。地球在月亮上的影子总是圆的，这只有在地球本身为球形的前提下才成立。如果地球是一块平坦的圆盘，除非月食总是发生在太阳正好位于这个圆盘中心之下的时候，否则地球的影子就会被拉长而成为椭圆。第二，希腊人从旅行中知道，在越往南的地区看星空，北极星则显得越靠近地平线。（因为北极星位于北极的正上方，所以它出现在处于北极的观察者的头顶上，而对于赤道上的观察者，北极星显得刚好在地平线上。）根据北极星在埃及和在希腊呈现出来的位置的差别，亚里士多德甚至估计出地球大圆长度为4000000斯特迪亚。现在不能准确地知道，一个斯特迪亚的长度究竟是多少，但也许是200码左右，这样就使得亚里士多德的估计为现在所接受的值约24000英里的两倍。希腊人甚至为地球是球形提供了第三个论据，否则何以从地平线外驶来的船总是先露出船帆，然后才是船身？</p>
+                    
+                    <h2>第二章 空间和时间</h2>
+                    <p>我们现在关于物体运动的观念来自于伽利略和牛顿。在他们之前，人们相信亚里士多德，他说物体的自然状态是静止的，并且只有在受到力或冲击的推动时才运动。这样，重的物体比轻的物体下落得更快，因为它受到更大的力将其拉向地球。</p>
+                    
+                    <p>亚里士多德的传统观点还以为，人们用纯粹思维可以找出制约宇宙的定律：不必要用观测去检验它。所以，伽利略是第一个想看看不同重量的物体是否确实以不同速度下落的人。据说，伽利略从比萨斜塔上将重物落下，从而证明了亚里士多德的信念是错的。这故事几乎不可能是真的，但是伽利略的确做了一些等同的事——将不同重量的球从光滑的斜面上滚下。这情况类似于重物的垂直下落，只是因为速度小而更容易观察而已。伽利略的测量指出，不管物体的重量是多少，其速度增加的速率是一样的。例如，在一个沿水平方向每走10米即下降1米的斜面上，你释放一个球，则1秒钟后球的速度为每秒1米，2秒钟后为每秒2米等等，而不管这个球有多重。当然，一个铅锤比一片羽毛下落得更快，那是因为空气对羽毛的阻力引起的。如果一个人释放两个不受空气阻力的物体，例如两个不同的铅锤，它们则以同样速度下降。</p>
+                `
+            }
+        };
+
+        // DOM 元素
+        const loginSection = document.getElementById('login-section');
+        const uploadSection = document.getElementById('upload');
+        const librarySection = document.getElementById('library');
+        const readerSection = document.getElementById('reader');
+        const emptyLibrary = document.getElementById('empty-library');
+        const booksGrid = document.getElementById('books-grid');
+        const logoutBtn = document.getElementById('logout-btn');
+        const mobileLogoutBtn = document.getElementById('mobile-logout-btn');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mainNav = document.getElementById('main-nav');
+        const readerTitle = document.getElementById('reader-title');
+        const readerAuthor = document.getElementById('reader-author');
+        const bookContent = document.getElementById('book-content');
+        const pageInfo = document.getElementById('page-info');
+        const pageSlider = document.getElementById('page-slider');
+        const fontSizeDecrease = document.getElementById('font-size-decrease');
+        const fontSizeIncrease = document.getElementById('font-size-increase');
+        const readerContent = document.getElementById('reader-content');
+        const toggleTheme = document.getElementById('toggle-theme');
+        const bookmarkPage = document.getElementById('bookmark-page');
+        const goToBookmark = document.getElementById('go-to-bookmark');
+        const toggleSidebar = document.getElementById('toggle-sidebar');
+        const readerSidebar = document.getElementById('reader-sidebar');
+        const prevPage = document.getElementById('prev-page');
+        const nextPage = document.getElementById('next-page');
+        const closeReader = document.getElementById('close-reader');
+        const tableOfContents = document.getElementById('table-of-contents');
+        const modal = document.getElementById('modal');
+        const modalContent = document.getElementById('modal-content');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const modalCancelBtn = document.getElementById('modal-cancel-btn');
+        const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+        const closeModal = document.getElementById('close-modal');
+        const notification = document.getElementById('notification');
+        const notificationTitle = document.getElementById('notification-title');
+        const notificationMessage = document.getElementById('notification-message');
+        const notificationIcon = document.getElementById('notification-icon');
+        const closeNotification = document.getElementById('close-notification');
+        const selectFileBtn = document.getElementById('select-file-btn');
+        const bookFile = document.getElementById('book-file');
+        const fileDropArea = document.getElementById('file-drop-area');
+        const filePreview = document.getElementById('file-preview');
+        const fileName = document.getElementById('file-name');
+        const fileSize = document.getElementById('file-size');
+        const fileIcon = document.getElementById('file-icon');
+        const removeFileBtn = document.getElementById('remove-file-btn');
+        const submitUploadBtn = document.getElementById('submit-upload-btn');
+        const uploadHelpBtn = document.getElementById('upload-help-btn');
+        const searchBooks = document.getElementById('search-books');
+        const sortBooks = document.getElementById('sort-books');
+        const filterBooks = document.getElementById('filter-books');
+        const loadMore = document.getElementById('load-more');
+
+        // 初始化应用
+        function initApp() {
+            // 显示图书馆或空图书馆状态
+            updateLibraryView();
+            
+            // 绑定事件监听器
+            bindEventListeners();
+        }
+
+        // 绑定事件监听器
+        function bindEventListeners() {
+            // 移动端菜单切换
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+            
+            // 导航链接点击事件
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#upload') {
+                        showSection(uploadSection);
+                    } else if (targetId === '#library') {
+                        showSection(librarySection);
+                    }
+                    // 关闭移动端菜单
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+            
+            // 登出按钮点击事件
+            logoutBtn.addEventListener('click', logout);
+            mobileLogoutBtn.addEventListener('click', logout);
+            
+            // 页面滚动事件 - 导航栏样式变化
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    mainNav.classList.add('py-2', 'shadow-lg');
+                    mainNav.classList.remove('py-3', 'shadow-md');
+                } else {
+                    mainNav.classList.add('py-3', 'shadow-md');
+                    mainNav.classList.remove('py-2', 'shadow-lg');
+                }
+            });
+            
+            // 阅读器控制事件
+            fontSizeDecrease.addEventListener('click', decreaseFontSize);
+            fontSizeIncrease.addEventListener('click', increaseFontSize);
+            toggleTheme.addEventListener('click', toggleReaderTheme);
+            bookmarkPage.addEventListener('click', toggleBookmark);
+            goToBookmark.addEventListener('click', goToLastBookmark);
+            toggleSidebar.addEventListener('click', toggleReaderSidebar);
+            prevPage.addEventListener('click', goToPrevPage);
+            nextPage.addEventListener('click', goToNextPage);
+            pageSlider.addEventListener('input', updatePageFromSlider);
+            closeReader.addEventListener('click', closeBookReader);
+            
+            // 模态框事件
+            closeModal.addEventListener('click', closeModalDialog);
+            modalCancelBtn.addEventListener('click', closeModalDialog);
+            
+            // 通知事件
+            closeNotification.addEventListener('click', hideNotification);
+            
+            // 文件上传相关事件
+            selectFileBtn.addEventListener('click', () => bookFile.click());
+            bookFile.addEventListener('change', handleFileSelect);
+            
+            // 拖放文件事件
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                fileDropArea.addEventListener(eventName, preventDefaults, false);
+            });
+            
+            function preventDefaults(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            
+            ['dragenter', 'dragover'].forEach(eventName => {
+                fileDropArea.addEventListener(eventName, highlight, false);
+            });
+            
+            ['dragleave', 'drop'].forEach(eventName => {
+                fileDropArea.addEventListener(eventName, unhighlight, false);
+            });
+            
+            function highlight() {
+                fileDropArea.classList.add('border-primary');
+            }
+            
+            function unhighlight() {
+                fileDropArea.classList.remove('border-primary');
+            }
+            
+            fileDropArea.addEventListener('drop', handleDrop, false);
+            
+            function handleDrop(e) {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                if (files.length > 0) {
+                    handleFile(files[0]);
+                }
+            }
+            
+            removeFileBtn.addEventListener('click', removeSelectedFile);
+            
+            // 表单提交事件
+            document.getElementById('upload-form').addEventListener('submit', handleUpload);
+            
+            // 上传帮助按钮事件
+            uploadHelpBtn.addEventListener('click', showUploadHelp);
+            
+            // 搜索图书事件
+            searchBooks.addEventListener('input', filterBooksBySearch);
+            
+            // 排序和筛选按钮事件
+            sortBooks.addEventListener('click', showSortOptions);
+            filterBooks.addEventListener('click', showFilterOptions);
+            
+            // 加载更多按钮事件
+            loadMore.addEventListener('click', loadMoreBooks);
+        }
+
+        // 显示指定部分，隐藏其他部分
+        function showSection(section) {
+            // 隐藏所有主要部分
+            [uploadSection, librarySection, readerSection].forEach(sec => {
+                sec.classList.add('hidden');
+            });
+            
+            // 显示指定部分
+            section.classList.remove('hidden');
+            
+            // 如果是图书馆部分，更新视图
+            if (section === librarySection) {
+                updateLibraryView();
+            }
+        }
+
+        // 更新图书馆视图
+        function updateLibraryView() {
+            if (appState.books.length === 0) {
+                emptyLibrary.classList.remove('hidden');
+                booksGrid.classList.add('hidden');
+            } else {
+                emptyLibrary.classList.add('hidden');
+                booksGrid.classList.remove('hidden');
+                renderBooks();
+            }
+        }
+
+        // 渲染图书列表
+        function renderBooks() {
+            booksGrid.innerHTML = '';
+            
+            appState.books.forEach(book => {
+                const bookCard = document.createElement('div');
+                bookCard.className = 'bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group';
+                bookCard.innerHTML = `
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="${book.cover}" alt="${book.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-3 right-3 bg-white/90 rounded-full p-2 shadow-md">
+                            <i class="fa fa-${getIconForFileType} text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg text-dark truncate">${book.title}</h3>
+                            <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full">${book.category}</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">${book.author}</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">${formatDate(book.uploadDate)}</span>
+                            <button class="text-primary hover:text-secondary transition-colors" onclick="openBook(${book.id})">
+                                <i class="fa fa-book mr-1"></i> 阅读
+                            </button>
+                        </div>
+                    </div>
+                `;
+                booksGrid.appendChild(bookCard);
+            });
+        }
+
+        // 获取文件类型对应的图标
+        function getIconForFileType(fileType) {
+            switch (fileType) {
+                case 'pdf':
+                    return 'file-pdf-o';
+                case 'epub':
+                    return 'file-text-o';
+                case 'mobi':
+                    return 'file-text-o';
+                case 'txt':
+                    return 'file-text-o';
+                default:
+                    return 'file-o';
+            }
+        }
+
+        // 格式化日期
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('zh-CN', options);
+        }
+
+        // 打开图书阅读
+        function openBook(bookId) {
+            const book = appState.books.find(b => b.id === bookId);
+            if (book) {
+                appState.currentBook = book;
+                appState.currentPage = 1; // 重置为第一页
+                
+                // 更新阅读器UI
+                readerTitle.textContent = book.title;
+                readerAuthor.textContent = book.author;
+                bookContent.innerHTML = appState.bookContents[bookId] || '<p>加载中...</p>';
+                updatePageInfo();
+                
+                // 生成目录
+                generateTableOfContents();
+                
+                // 显示阅读器
+                showSection(readerSection);
+                
+                // 标记当前页是否已加书签
+                updateBookmarkStatus();
+            }
+        }
+
+        // 生成目录
+        function generateTableOfContents() {
+            tableOfContents.innerHTML = '';
+            
+            if (!appState.currentBook) return;
+            
+            const bookContent = appState.bookContents[appState.currentBook.id];
+            if (!bookContent) return;
+            
+            // 创建一个临时元素来解析HTML内容
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = bookContent;
+            
+            // 提取所有标题元素
+            const headings = tempDiv.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            
+            headings.forEach((heading, index) => {
+                const listItem = document.createElement('li');
+                const level = parseInt(heading.tagName.charAt(1));
+                
+                listItem.className = `ml-${(level - 1) * 4} mb-1`;
+                listItem.innerHTML = `
+                    <a href="#" onclick="goToHeading(${index}); return false;" class="block text-gray-700 hover:text-primary transition-colors">
+                        ${heading.textContent}
+                    </a>
+                `;
+                
+                tableOfContents.appendChild(listItem);
+            });
+        }
+
+        // 跳转到指定标题
+        function goToHeading(index) {
+            if (!appState.currentBook) return;
+            
+            const bookContent = appState.bookContents[appState.currentBook.id];
+            if (!bookContent) return;
+            
+            // 创建一个临时元素来解析HTML内容
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = bookContent;
+            
+            // 提取所有标题元素
+            const headings = tempDiv.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            
+            if (index < headings.length) {
+                const targetHeading = headings[index];
+                const targetId = `heading-${index}`;
+                
+                // 为目标标题添加ID
+                targetHeading.id = targetId;
+                
+                // 更新图书内容
+                bookContent.innerHTML = tempDiv.innerHTML;
+                
+                // 滚动到目标标题
+                setTimeout(() => {
+                    const element = document.getElementById(targetId);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 100);
+            }
+        }
+
+        // 更新页面信息
+        function updatePageInfo() {
+            pageInfo.textContent = `第 ${appState.currentPage} 页，共 ${appState.totalPages} 页`;
+            pageSlider.value = appState.currentPage;
+        }
+
+        // 减小字体大小
+        function decreaseFontSize() {
+            if (appState.fontSize > 12) {
+                appState.fontSize -= 2;
+                readerContent.style.fontSize = `${appState.fontSize}px`;
+            }
+        }
+
+        // 增大字体大小
+        function increaseFontSize() {
+            if (appState.fontSize < 24) {
+                appState.fontSize += 2;
+                readerContent.style.fontSize = `${appState.fontSize}px`;
+            }
+        }
+
+        // 切换阅读器主题
+        function toggleReaderTheme() {
+            appState.darkMode = !appState.darkMode;
+            
+            if (appState.darkMode) {
+                readerContent.classList.add('bg-gray-900', 'text-gray-100');
+                readerSidebar.classList.add('bg-gray-800', 'text-gray-200');
+                toggleTheme.innerHTML = '<i class="fa fa-sun-o"></i>';
+            } else {
+                readerContent.classList.remove('bg-gray-900', 'text-gray-100');
+                readerSidebar.classList.remove('bg-gray-800', 'text-gray-200');
+                toggleTheme.innerHTML = '<i class="fa fa-moon-o"></i>';
+            }
+        }
+
+        // 切换书签状态
+        function toggleBookmark() {
+            if (!appState.currentBook) return;
+            
+            const currentPage = appState.currentPage;
+            const bookmarks = appState.currentBook.bookmarks || [];
+            
+            if (bookmarks.includes(currentPage)) {
+                // 移除书签
+                appState.currentBook.bookmarks = bookmarks.filter(page => page !== currentPage);
+                bookmarkPage.innerHTML = '<i class="fa fa-bookmark-o"></i>';
+                showNotification('书签已移除', '当前页面的书签已成功移除', 'fa-bookmark-o', 'text-red-500');
+            } else {
+                // 添加书签
+                appState.currentBook.bookmarks = [...bookmarks, currentPage].sort((a, b) => a - b);
+                bookmarkPage.innerHTML = '<i class="fa fa-bookmark text-yellow-500"></i>';
+                showNotification('书签已添加', '当前页面已成功添加书签', 'fa-bookmark', 'text-yellow-500');
+            }
+        }
+
+        // 更新书签状态UI
+        function updateBookmarkStatus() {
+            if (!appState.currentBook) return;
+            
+            const currentPage = appState.currentPage;
+            const bookmarks = appState.currentBook.bookmarks || [];
+            
+            if (bookmarks.includes(currentPage)) {
+                bookmarkPage.innerHTML = '<i class="fa fa-bookmark text-yellow-500"></i>';
+            } else {
+                bookmarkPage.innerHTML = '<i class="fa fa-bookmark-o"></i>';
+            }
+        }
+
+        // 跳转到最后一个书签
+        function goToLastBookmark() {
+            if (!appState.currentBook || !appState.currentBook.bookmarks || appState.currentBook.bookmarks.length === 0) {
+                showNotification('没有书签', '当前图书没有添加任何书签', 'fa-exclamation-circle', 'text-gray-500');
+                return;
+            }
+            
+            const lastBookmark = appState.currentBook.bookmarks[appState.currentBook.bookmarks.length - 1];
+            appState.currentPage = lastBookmark;
+            updatePageInfo();
+            
+            // 模拟翻页效果
+            showNotification('跳转到书签', `已跳转到第 ${lastBookmark} 页`, 'fa-bookmark', 'text-yellow-500');
+        }
+
+        // 切换阅读器侧边栏
+        function toggleReaderSidebar() {
+            readerSidebar.classList.toggle('hidden');
+            readerSidebar.classList.toggle('md:block');
+        }
+
+        // 上一页
+        function goToPrevPage() {
+            if (appState.currentPage > 1) {
+                appState.currentPage--;
+                updatePageInfo();
+                updateBookmarkStatus();
+            }
+        }
+
+        // 下一页
+        function goToNextPage() {
+            if (appState.currentPage < appState.totalPages) {
+                appState.currentPage++;
+                updatePageInfo();
+                updateBookmarkStatus();
+            }
+        }
+
+        // 从滑块更新页面
+        function updatePageFromSlider() {
+            appState.currentPage = parseInt(pageSlider.value);
+            updatePageInfo();
+            updateBookmarkStatus();
+        }
+
+        // 关闭图书阅读器
+        function closeBookReader() {
+            appState.currentBook = null;
+            showSection(librarySection);
+        }
+
+        // 登出
+        function logout() {
+            showModal(
+                '确认退出',
+                '您确定要退出阅读吗？您的阅读进度将会被保存。',
+                () => {
+                    appState.isLoggedIn = false;
+                    showSection(loginSection);
+                    closeModalDialog();
+                }
+            );
+        }
+
+        // 移动端菜单切换
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // 显示模态框
+        function showModal(title, body, confirmCallback) {
+            modalTitle.textContent = title;
+            modalBody.innerHTML = body;
+            
+            // 保存确认回调
+            modalConfirmBtn.onclick = confirmCallback;
+            
+            // 显示模态框
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        // 关闭模态框
+        function closeModalDialog() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // 显示通知
+        function showNotification(title, message, icon, iconClass = 'text-green-500') {
+            notificationTitle.textContent = title;
+            notificationMessage.textContent = message;
+            notificationIcon.className = `fa ${icon} ${iconClass}`;
+            
+            notification.classList.remove('translate-x-full');
+            
+            // 5秒后自动隐藏
+            setTimeout(hideNotification, 5000);
+        }
+
+        // 隐藏通知
+        function hideNotification() {
+            notification.classList.add('translate-x-full');
+        }
+
+        // 处理文件选择
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+
+        // 处理拖放文件
+        function handleFile(file) {
+            // 验证文件类型
+            const allowedTypes = ['.pdf', '.epub', '.mobi', '.txt'];
+            const fileExtension = file.name.toLowerCase().substring(file.name.lastIndexOf('.'));
+            
+            if (!allowedTypes.includes(fileExtension)) {
+                showNotification('文件格式错误', '请上传PDF, EPUB, MOBI或TXT格式的文件', 'fa-exclamation-circle', 'text-red-500');
+                return;
+            }
+            
+            // 更新文件预览
+            fileDropArea.classList.add('hidden');
+            filePreview.classList.remove('hidden');
+            
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            
+            // 设置文件图标
+            if (fileExtension === '.pdf') {
+                fileIcon.className = 'fa fa-file-pdf-o text-red-500 mr-3 text-xl';
+            } else if (fileExtension === '.txt') {
+                fileIcon.className = 'fa fa-file-text-o text-blue-500 mr-3 text-xl';
+            } else {
+                fileIcon.className = 'fa fa-file-text-o text-primary mr-3 text-xl';
+            }
+            
+            // 启用上传按钮
+            submitUploadBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+            submitUploadBtn.disabled = false;
+        }
+
+        // 移除选中的文件
+        function removeSelectedFile() {
+            fileDropArea.classList.remove('hidden');
+            filePreview.classList.add('hidden');
+            bookFile.value = '';
+            
+            // 禁用上传按钮
+            submitUploadBtn.classList.add('opacity-70', 'cursor-not-allowed');
+            submitUploadBtn.disabled = true;
+        }
+
+        // 格式化文件大小
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        // 处理上传
+        function handleUpload(e) {
+            e.preventDefault();
+            
+            const title = document.getElementById('book-title').value.trim();
+            const author = document.getElementById('book-author').value.trim();
+            const category = document.getElementById('book-category').value;
+            const year = document.getElementById('book-year').value;
+            const description = document.getElementById('book-description').value.trim();
+            
+            // 验证表单
+            if (!title || !author) {
+                showNotification('表单不完整', '请填写书名和作者', 'fa-exclamation-circle', 'text-red-500');
+                return;
+            }
+            
+            if (!bookFile.files.length) {
+                showNotification('没有选择文件', '请选择要上传的电子书文件', 'fa-exclamation-circle', 'text-red-500');
+                return;
+            }
+            
+            const file = bookFile.files[0];
+            const fileExtension = file.name.toLowerCase().substring(file.name.lastIndexOf('.'));
+            
+            // 创建新图书对象
+            const newBook = {
+                id: Date.now(), // 使用时间戳作为唯一ID
+                title,
+                author,
+                category,
+                year: year || '',
+                description,
+                file: file.name,
+                fileType: fileExtension.substring(1),
+                cover: `https://picsum.photos/seed/${title.replace(/\s+/g, '-')}/200/300`,
+                uploadDate: new Date().toISOString().split('T')[0],
+                bookmarks: []
+            };
+            
+            // 添加到图书列表
+            appState.books.push(newBook);
+            
+            // 为新书创建模拟内容
+            appState.bookContents[newBook.id] = `
+                <h1>${title}</h1>
+                <p class="lead">${author}</p>
+                
+                <p>这是《${title}》的预览内容。</p>
+                
+                <h2>第1章 引言</h2>
+                <p>${description || '本书内容丰富，值得一读。'}</p>
+                
+                <h2>第2章 主要内容</h2>
+                <p>这里是本书的主要内容部分，详细介绍了相关主题和知识点。</p>
+                
+                <p>这是一个模拟的电子书内容，实际内容将根据您上传的电子书文件显示。</p>
+            `;
+            
+            // 重置表单
+            document.getElementById('upload-form').reset();
+            removeSelectedFile();
+            
+            // 显示成功通知
+            showNotification('上传成功', `《${title}》已成功添加到您的图书馆`, 'fa-check-circle', 'text-green-500');
+            
+            // 切换到图书馆视图
+            showSection(librarySection);
+        }
+
+        // 显示上传帮助
+        function showUploadHelp() {
+            showModal(
+                '上传帮助',
+                `
+                <p class="mb-3">您可以上传以下格式的电子书：PDF, EPUB, MOBI, TXT</p>
+                <p class="mb-3">请确保填写所有必填字段（带*标记）</p>
+                <p class="mb-3">封面图片将自动生成，或您也可以在上传后编辑图书信息添加自定义封面</p>
+                <p>上传后的图书将保存在您的个人图书馆中，您可以随时阅读、下载或分享</p>
+                `,
+                () => closeModalDialog()
+            );
+        }
+
+        // 根据搜索过滤图书
+        function filterBooksBySearch() {
+            const searchTerm = searchBooks.value.toLowerCase().trim();
+            
+            if (!searchTerm) {
+                // 如果搜索框为空，显示所有图书
+                updateLibraryView();
+                return;
+            }
+            
+            // 过滤图书
+            const filteredBooks = appState.books.filter(book => 
+                book.title.toLowerCase().includes(searchTerm) || 
+                book.author.toLowerCase().includes(searchTerm) || 
+                book.category.toLowerCase().includes(searchTerm)
+            );
+            
+            // 更新视图
+            if (filteredBooks.length === 0) {
+                emptyLibrary.classList.remove('hidden');
+                booksGrid.classList.add('hidden');
+                emptyLibrary.innerHTML = `
+                    <div class="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto transform transition-all duration-500 hover:shadow-xl">
+                        <i class="fa fa-search text-gray-300 text-6xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-700 mb-2">没有找到匹配的图书</h3>
+                        <p class="text-gray-500 mb-6">尝试使用不同的关键词或检查拼写</p>
+                        <button class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors transform hover:scale-105" onclick="searchBooks.value=''">
+                            清除搜索
+                        </button>
+                    </div>
+                `;
+            } else {
+                emptyLibrary.classList.add('hidden');
+                booksGrid.classList.remove('hidden');
+                
+                // 渲染过滤后的图书
+                booksGrid.innerHTML = '';
+                filteredBooks.forEach(book => {
+                    const bookCard = document.createElement('div');
+                    bookCard.className = 'bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group';
+                    bookCard.innerHTML = `
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="${book.cover}" alt="${book.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-3 right-3 bg-white/90 rounded-full p-2 shadow-md">
+                                <i class="fa fa-${getIconForFileType(book.fileType)} text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg text-dark truncate">${book.title}</h3>
+                                <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full">${book.category}</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">${book.author}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs text-gray-500">${formatDate(book.uploadDate)}</span>
+                                <button class="text-primary hover:text-secondary transition-colors" onclick="openBook(${book.id})">
+                                    <i class="fa fa-book mr-1"></i> 阅读
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    booksGrid.appendChild(bookCard);
+                });
+            }
+        }
+
+        // 显示排序选项
+        function showSortOptions() {
+            showModal(
+                '排序图书',
+                `
+                <div class="space-y-3">
+                    <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="sortBooksBy('title', 'asc'); closeModalDialog()">
+                        <i class="fa fa-sort-alpha-asc mr-2"></i> 按书名升序
+                    </button>
+                    <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="sortBooksBy('title', 'desc'); closeModalDialog()">
+                        <i class="fa fa-sort-alpha-desc mr-2"></i> 按书名降序
+                    </button>
+                    <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="sortBooksBy('author', 'asc'); closeModalDialog()">
+                        <i class="fa fa-user mr-2"></i> 按作者升序
+                    </button>
+                    <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="sortBooksBy('author', 'desc'); closeModalDialog()">
+                        <i class="fa fa-user mr-2"></i> 按作者降序
+                    </button>
+                    <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="sortBooksBy('uploadDate', 'desc'); closeModalDialog()">
+                        <i class="fa fa-calendar mr-2"></i> 按上传日期降序
+                    </button>
+                    <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="sortBooksBy('uploadDate', 'asc'); closeModalDialog()">
+                        <i class="fa fa-calendar mr-2"></i> 按上传日期升序
+                    </button>
+                </div>
+                `,
+                () => {}
+            );
+        }
+
+        // 按指定字段排序图书
+        function sortBooksBy(field, direction) {
+            appState.books.sort((a, b) => {
+                if (field === 'uploadDate') {
+                    return direction === 'asc' 
+                        ? new Date(a[field]) - new Date(b[field]) 
+                        : new Date(b[field]) - new Date(a[field]);
+                } else {
+                    return direction === 'asc' 
+                        ? a[field].localeCompare(b[field]) 
+                        : b[field].localeCompare(a[field]);
+                }
+            });
+            
+            updateLibraryView();
+            
+            // 显示排序通知
+            let sortText = '';
+            if (field === 'title') {
+                sortText = direction === 'asc' ? '按书名升序' : '按书名降序';
+            } else if (field === 'author') {
+                sortText = direction === 'asc' ? '按作者升序' : '按作者降序';
+            } else if (field === 'uploadDate') {
+                sortText = direction === 'asc' ? '按上传日期升序' : '按上传日期降序';
+            }
+            
+            showNotification('排序成功', `图书已${sortText}排序`, 'fa-sort', 'text-primary');
+        }
+
+        // 显示过滤选项
+        function showFilterOptions() {
+            showModal(
+                '筛选图书',
+                `
+                <div class="space-y-3">
+                    <h4 class="font-medium text-gray-800">按分类筛选</h4>
+                    <div class="space-y-2">
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('all'); closeModalDialog()">
+                            <i class="fa fa-book mr-2"></i> 所有图书
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('文学'); closeModalDialog()">
+                            <i class="fa fa-book mr-2"></i> 文学
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('科学'); closeModalDialog()">
+                            <i class="fa fa-flask mr-2"></i> 科学
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('技术'); closeModalDialog()">
+                            <i class="fa fa-code mr-2"></i> 技术
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('历史'); closeModalDialog()">
+                            
+                            <i class="fa fa-history mr-2"></i> 历史
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('哲学'); closeModalDialog()">
+                            <i class="fa fa-lightbulb-o mr-2"></i> 哲学
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('艺术'); closeModalDialog()">
+                            <i class="fa fa-paint-brush mr-2"></i> 艺术
+                        </button>
+                        <button class="w-full text-left p-2 hover:bg-gray-100 rounded-lg transition-colors" onclick="filterBooksByCategory('其他'); closeModalDialog()">
+                            <i class="fa fa-ellipsis-h mr-2"></i> 其他
+                        </button>
+                    </div>
+                </div>
+                `,
+                () => {}
+            );
+        }
+
+        // 按分类过滤图书
+        function filterBooksByCategory(category) {
+            if (category === 'all') {
+                // 显示所有图书
+                updateLibraryView();
+                showNotification('筛选成功', '已显示所有图书', 'fa-filter', 'text-primary');
+                return;
+            }
+            
+            // 过滤图书
+            const filteredBooks = appState.books.filter(book => book.category === category);
+            
+            // 更新视图
+            if (filteredBooks.length === 0) {
+                emptyLibrary.classList.remove('hidden');
+                booksGrid.classList.add('hidden');
+                emptyLibrary.innerHTML = `
+                    <div class="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto transform transition-all duration-500 hover:shadow-xl">
+                        <i class="fa fa-folder-open-o text-gray-300 text-6xl mb-4"></i>
+                        <h3 class="text-xl font-bold text-gray-700 mb-2">该分类下没有图书</h3>
+                        <p class="text-gray-500 mb-6">尝试上传一些${category}类的图书</p>
+                        <button class="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors transform hover:scale-105" onclick="showSection(uploadSection); closeModalDialog()">
+                            上传图书
+                        </button>
+                    </div>
+                `;
+            } else {
+                emptyLibrary.classList.add('hidden');
+                booksGrid.classList.remove('hidden');
+                
+                // 渲染过滤后的图书
+                booksGrid.innerHTML = '';
+                filteredBooks.forEach(book => {
+                    const bookCard = document.createElement('div');
+                    bookCard.className = 'bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group';
+                    bookCard.innerHTML = `
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="${book.cover}" alt="${book.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute top-3 right-3 bg-white/90 rounded-full p-2 shadow-md">
+                                <i class="fa fa-${getIconForFileType(book.fileType)} text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg text-dark truncate">${book.title}</h3>
+                                <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded-full">${book.category}</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">${book.author}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs text-gray-500">${formatDate(book.uploadDate)}</span>
+                                <button class="text-primary hover:text-secondary transition-colors" onclick="openBook(${book.id})">
+                                    <i class="fa fa-book mr-1"></i> 阅读
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    booksGrid.appendChild(bookCard);
+                });
+            }
+            
+            showNotification('筛选成功', `已筛选出${category}类的图书`, 'fa-filter', 'text-primary');
+        }
+
+        // 加载更多图书（模拟）
+        function loadMoreBooks() {
+            // 显示加载中状态
+            loadMore.innerHTML = `
+                <button class="px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center mx-auto">
+                    <i class="fa fa-circle-o-notch fa-spin mr-2"></i>
+                    <span>加载中...</span>
+                </button>
+            `;
+            
+            // 模拟加载延迟
+            setTimeout(() => {
+                // 恢复按钮状态
+                loadMore.innerHTML = `
+                    <button class="px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center mx-auto">
+                        <i class="fa fa-refresh mr-2"></i>
+                        <span>加载更多
